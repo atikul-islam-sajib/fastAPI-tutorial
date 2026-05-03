@@ -10,6 +10,9 @@ def load_dataset():
     with open("database.json", "r") as file:
         return json.load(file)
 
+def save_dataset(data):
+    with open("database.json", "w") as file:
+        json.dump(data, file, indent=4)
 
 class Students(BaseModel):
     id: Annotated[
@@ -219,3 +222,15 @@ def show_scholarship_students():
             information.append({student["name"]: "You are eligible for scholarship"})
 
     return information
+
+# Query: I want to add one filed that is scholarship in the students details
+@app.get("/scholarship/details")
+def display_scholarship_details():
+    students_information = load_dataset()["students"]
+    
+    for student in students_information:
+        if student["is_active"] == True and student["profile"]["gpa"] > 3.5:
+            student["scholarship"] = "You are eligible for scholarship"
+            save_dataset(students_information)
+
+    return students_information
