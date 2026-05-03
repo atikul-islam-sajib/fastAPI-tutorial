@@ -1,22 +1,6 @@
 {
     "students": [
         {
-            "id": 1,
-            "name": "Lena Fischer",
-            "age": 20,
-            "email": "lena.fischer@example.com",
-            "is_active": true,
-            "enrolled_courses": [
-                101,
-                102
-            ],
-            "profile": {
-                "gpa": 3.7,
-                "major": "Computer Science",
-                "year": 2
-            }
-        },
-        {
             "id": 2,
             "name": "Jonas Weber",
             "age": 22,
