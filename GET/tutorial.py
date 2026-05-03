@@ -10,9 +10,11 @@ def load_dataset():
     with open("database.json", "r") as file:
         return json.load(file)
 
+
 def save_dataset(data):
     with open("database.json", "w") as file:
         json.dump(data, file, indent=4)
+
 
 class Students(BaseModel):
     id: Annotated[
@@ -223,14 +225,132 @@ def show_scholarship_students():
 
     return information
 
+
 # Query: I want to add one filed that is scholarship in the students details
 @app.get("/scholarship/details")
 def display_scholarship_details():
     students_information = load_dataset()["students"]
-    
+
     for student in students_information:
         if student["is_active"] == True and student["profile"]["gpa"] > 3.5:
             student["scholarship"] = "You are eligible for scholarship"
             save_dataset(students_information)
 
     return students_information
+
+
+# Grade A: find that student name, course name, course credit
+@app.get("/grade/{grade}")
+def show_details_about_students(
+    grade: str = Path(..., description="The grade of the student")
+):
+    student_details = load_dataset()[
+        "students"
+    ]  # It will return a list of dictornaries
+    course_details = load_dataset()["courses"]  # It will return a list of dictornaries
+    grade_details = load_dataset()["grades"]  # It will return a list of dictornaries
+
+    information = []
+
+    for details in grade_details:
+        if details["grade"] == grade:
+            information.append(
+                {"course_id": details["course_id"], "student_id": details["student_id"]}
+            )
+
+    courses = []
+    # information: list of dictornary : [{"course_id": 103, "student_id": 2}]
+    for details in course_details:
+        for info in information:
+            if details["id"] == info["course_id"]:
+                courses.append(
+                    {"name": details["name"], "instructor": details["instructor"]}
+                )
+
+    students = []
+    for details in student_details:
+        for info in information:
+            if details["id"] == info["student_id"]:
+                students.append({"name": details["name"]})
+
+    return {"students": students, "courses": courses}
+
+
+# Products Query
+
+
+def load_dataset_ecommerce():
+    with open("products.json", "r") as file:
+        return json.load(file)
+
+
+"""
+  "orders": [
+    {
+      "id": 5001,
+      "user_id": 1,
+      "items": [
+        {
+          "product_id": 101,
+          "quantity": 1
+        },
+        {
+          "product_id": 102,
+          "quantity": 2
+        }
+      ],
+      "total_price": 1500.50,
+      "status": "completed"
+    }
+  ]
+}
+
+ "products": [
+    {
+      "id": 101,
+      "name": "Laptop",
+      "price": 1200.50,
+      "stock": 10
+    },
+    {
+      "id": 102,
+      "name": "Headphones",
+      "price": 150.00,
+      "stock": 25
+    }
+  ],
+"""
+
+
+@app.get("/user/{user_id}")
+def display_all_completed_products(
+    user_id: int = Path(..., description="The ID of the user")
+):
+    orders_detail = load_dataset_ecommerce()  # It will return a list of dictornaries
+    products_detail = load_dataset_ecommerce()
+
+    orders_information = []
+
+    for order in orders_detail["orders"]:
+        if "completed" == order["status"] and user_id == order["user_id"]:
+            orders_information.append(order)
+
+    informations = []
+    products_info = []
+    for order in orders_information:
+        product_id = order["items"]
+        for product in products_detail["products"]:
+            for each_product in product_id:
+                if product["id"] == each_product["product_id"]:
+                    products_info.append({"name": product["name"], "quantity": each_product["quantity"]})
+
+        informations.append(
+            {
+                "order_id": order["id"],
+                "products": products_info,
+                "total_price": order["total_price"],
+                "status": order["status"],
+            }
+        )
+
+    return informations

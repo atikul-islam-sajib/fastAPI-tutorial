@@ -1,0 +1,916 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "Students",
+        "kind": 6,
+        "importPath": "DELETE.tutorial",
+        "description": "DELETE.tutorial",
+        "peekOfCode": "class Students(BaseModel):\n    id: Optional[Annotated[int, Field(description=\"The ID of the student\", examples=[1, 2, 3])]] = None\n    name: Optional[Annotated[str, Field(description=\"The name of the student\", examples=[\"Lena Fischer\"])]] = None\n    age: Optional[Annotated[int, Field(description=\"The age of the student\", examples=[20, 21, 22])]] = None\n    email: Optional[Annotated[str, Field(description=\"The email of the student\", examples=[\"lena.fischer@example.com\"])]] = None\n    is_active: Optional[Annotated[bool, Field(description=\"Whether the student is active or not\", examples=[True, False])]] = None\n    enrolled_courses: Optional[Annotated[List[int], Field(description=\"The list of courses the student is enrolled in\", examples=[[101, 102]])]] = None\n    profile: Optional[Annotated[\n        Dict[str, Optional[Union[str, int, float]]],\n        Field(",
+        "detail": "DELETE.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "Courses",
+        "kind": 6,
+        "importPath": "DELETE.tutorial",
+        "description": "DELETE.tutorial",
+        "peekOfCode": "class Courses(BaseModel):\n    id: Annotated[\n        int, Field(..., description=\"The ID of the course\", examples=[101, 102, 103])\n    ]\n    name: Annotated[\n        str,\n        Field(\n            ...,\n            description=\"The name of the course\",\n            examples=[\"Introduction to Programming\", \"Data Structures\", \"Algorithms\"],",
+        "detail": "DELETE.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "Grades",
+        "kind": 6,
+        "importPath": "DELETE.tutorial",
+        "description": "DELETE.tutorial",
+        "peekOfCode": "class Grades(BaseModel):\n    student_id: Optional[Annotated[\n        int, Field(description=\"The ID of the student\", examples=[1, 2, 3])\n    ]]\n    course_id: Optional[Annotated[\n        int, Field(description=\"The ID of the course\", examples=[101, 102, 103])\n    ]]\n    grade: Optional[Annotated[\n        str,\n        Field(description=\"The grade of the student in the course\", examples=[\"A\", \"B\", \"C\"],",
+        "detail": "DELETE.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "load_dataset",
+        "kind": 2,
+        "importPath": "DELETE.tutorial",
+        "description": "DELETE.tutorial",
+        "peekOfCode": "def load_dataset():\n    with open(\"database.json\", \"r\") as file:\n        return json.load(file)\ndef save_dataset(data):\n    with open(\"database.json\", \"w\") as file:\n        return json.dump(data, file, indent=4)\nclass Students(BaseModel):\n    id: Optional[Annotated[int, Field(description=\"The ID of the student\", examples=[1, 2, 3])]] = None\n    name: Optional[Annotated[str, Field(description=\"The name of the student\", examples=[\"Lena Fischer\"])]] = None\n    age: Optional[Annotated[int, Field(description=\"The age of the student\", examples=[20, 21, 22])]] = None",
+        "detail": "DELETE.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "save_dataset",
+        "kind": 2,
+        "importPath": "DELETE.tutorial",
+        "description": "DELETE.tutorial",
+        "peekOfCode": "def save_dataset(data):\n    with open(\"database.json\", \"w\") as file:\n        return json.dump(data, file, indent=4)\nclass Students(BaseModel):\n    id: Optional[Annotated[int, Field(description=\"The ID of the student\", examples=[1, 2, 3])]] = None\n    name: Optional[Annotated[str, Field(description=\"The name of the student\", examples=[\"Lena Fischer\"])]] = None\n    age: Optional[Annotated[int, Field(description=\"The age of the student\", examples=[20, 21, 22])]] = None\n    email: Optional[Annotated[str, Field(description=\"The email of the student\", examples=[\"lena.fischer@example.com\"])]] = None\n    is_active: Optional[Annotated[bool, Field(description=\"Whether the student is active or not\", examples=[True, False])]] = None\n    enrolled_courses: Optional[Annotated[List[int], Field(description=\"The list of courses the student is enrolled in\", examples=[[101, 102]])]] = None",
+        "detail": "DELETE.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "delete_students",
+        "kind": 2,
+        "importPath": "DELETE.tutorial",
+        "description": "DELETE.tutorial",
+        "peekOfCode": "def delete_students(student_id:int):\n    student_details = load_dataset()\n    for student_info in student_details[\"students\"]:\n        if student_info[\"id\"] == student_id:\n            student_details[\"students\"].remove(student_info)\n            save_dataset(student_details)\n            break\n    return student_details",
+        "detail": "DELETE.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "DELETE.tutorial",
+        "description": "DELETE.tutorial",
+        "peekOfCode": "app = FastAPI()\ndef load_dataset():\n    with open(\"database.json\", \"r\") as file:\n        return json.load(file)\ndef save_dataset(data):\n    with open(\"database.json\", \"w\") as file:\n        return json.dump(data, file, indent=4)\nclass Students(BaseModel):\n    id: Optional[Annotated[int, Field(description=\"The ID of the student\", examples=[1, 2, 3])]] = None\n    name: Optional[Annotated[str, Field(description=\"The name of the student\", examples=[\"Lena Fischer\"])]] = None",
+        "detail": "DELETE.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "Students",
+        "kind": 6,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "class Students(BaseModel):\n    id: Annotated[\n        int, Field(..., description=\"The ID of the student\", examples=[1, 2, 3])\n    ]\n    name: Annotated[\n        str,\n        Field(\n            ...,\n            description=\"The name of the student\",\n            examples=[\"Lena Fischer\", \"John Doe\", \"Emma Smith\"],",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "Courses",
+        "kind": 6,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "class Courses(BaseModel):\n    id: Annotated[\n        int, Field(..., description=\"The ID of the course\", examples=[101, 102, 103])\n    ]\n    name: Annotated[\n        str,\n        Field(\n            ...,\n            description=\"The name of the course\",\n            examples=[\"Introduction to Programming\", \"Data Structures\", \"Algorithms\"],",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "Grades",
+        "kind": 6,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "class Grades(BaseModel):\n    student_id: Annotated[\n        int, Field(..., description=\"The ID of the student\", examples=[1, 2, 3])\n    ]\n    course_id: Annotated[\n        int, Field(..., description=\"The ID of the course\", examples=[101, 102, 103])\n    ]\n    grade: Annotated[\n        str,\n        Field(",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "load_dataset",
+        "kind": 2,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "def load_dataset():\n    with open(\"database.json\", \"r\") as file:\n        return json.load(file)\ndef save_dataset(data):\n    with open(\"database.json\", \"w\") as file:\n        json.dump(data, file, indent=4)\nclass Students(BaseModel):\n    id: Annotated[\n        int, Field(..., description=\"The ID of the student\", examples=[1, 2, 3])\n    ]",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "save_dataset",
+        "kind": 2,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "def save_dataset(data):\n    with open(\"database.json\", \"w\") as file:\n        json.dump(data, file, indent=4)\nclass Students(BaseModel):\n    id: Annotated[\n        int, Field(..., description=\"The ID of the student\", examples=[1, 2, 3])\n    ]\n    name: Annotated[\n        str,\n        Field(",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "display_all_students",
+        "kind": 2,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "def display_all_students():\n    dataset = load_dataset()\n    return dataset\n# Query: Get a specific student by ID\n@app.get(\"/student/{student_id}\")\ndef display_specific_student_detail(\n    student_id: int = Path(..., description=\"The ID of the student\")\n):\n    student_details = load_dataset()[\"students\"]\n    return student_details[student_id - 1]",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "display_specific_student_detail",
+        "kind": 2,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "def display_specific_student_detail(\n    student_id: int = Path(..., description=\"The ID of the student\")\n):\n    student_details = load_dataset()[\"students\"]\n    return student_details[student_id - 1]\n# Query: Which courses is a student enrolled in ?\n@app.get(\"/courses/{student_id}\")\ndef show_course_details(\n    student_id: int = Path(..., description=\"The ID of the student\")\n):",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "show_course_details",
+        "kind": 2,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "def show_course_details(\n    student_id: int = Path(..., description=\"The ID of the student\")\n):\n    data = load_dataset()\n    students = data[\"students\"]\n    courses = data[\"courses\"]\n    enrolled_course_ids = []\n    for student in students:\n        if student_id == student[\"id\"]:\n            enrolled_course_ids.extend(student[\"enrolled_courses\"])",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "display_student_grade",
+        "kind": 2,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "def display_student_grade(\n    student_id: int = Path(..., description=\"The ID of the student\")\n):\n    grade_details = load_dataset()[\"grades\"]\n    course_details = load_dataset()[\"courses\"]\n    grades = list()\n    for grade in grade_details:\n        if student_id == grade[\"student_id\"]:\n            grades.append(\n                {",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "enrolled_courses",
+        "kind": 2,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "def enrolled_courses():\n    student_details = load_dataset()[\"students\"]\n    information = list()\n    for student in student_details:\n        information.append(\n            {student[\"name\"]: \"Enrolled in \" + str(len(student[\"enrolled_courses\"]))}\n        )\n    return information\n# Query: Which student would get scholarship ?\n@app.get(\"/scholarship\")",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "show_scholarship_students",
+        "kind": 2,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "def show_scholarship_students():\n    student_details = load_dataset()[\"students\"]\n    information = list()\n    for student in student_details:\n        if student[\"is_active\"] == True and student[\"profile\"][\"gpa\"] > 3.5:\n            information.append({student[\"name\"]: \"You are eligible for scholarship\"})\n    return information\n# Query: I want to add one filed that is scholarship in the students details\n@app.get(\"/scholarship/details\")\ndef display_scholarship_details():",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "display_scholarship_details",
+        "kind": 2,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "def display_scholarship_details():\n    students_information = load_dataset()[\"students\"]\n    for student in students_information:\n        if student[\"is_active\"] == True and student[\"profile\"][\"gpa\"] > 3.5:\n            student[\"scholarship\"] = \"You are eligible for scholarship\"\n            save_dataset(students_information)\n    return students_information\n# Grade A: find that student name, course name, course credit\n@app.get(\"/grade/{grade}\")\ndef show_details_about_students(",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "show_details_about_students",
+        "kind": 2,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "def show_details_about_students(\n    grade: str = Path(..., description=\"The grade of the student\")\n):\n    student_details = load_dataset()[\n        \"students\"\n    ]  # It will return a list of dictornaries\n    course_details = load_dataset()[\"courses\"]  # It will return a list of dictornaries\n    grade_details = load_dataset()[\"grades\"]  # It will return a list of dictornaries\n    information = []\n    for details in grade_details:",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "load_dataset_ecommerce",
+        "kind": 2,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "def load_dataset_ecommerce():\n    with open(\"products.json\", \"r\") as file:\n        return json.load(file)\n\"\"\"\n  \"orders\": [\n    {\n      \"id\": 5001,\n      \"user_id\": 1,\n      \"items\": [\n        {",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "display_all_completed_products",
+        "kind": 2,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "def display_all_completed_products(\n    user_id: int = Path(..., description=\"The ID of the user\")\n):\n    orders_detail = load_dataset_ecommerce()  # It will return a list of dictornaries\n    products_detail = load_dataset_ecommerce()\n    orders_information = []\n    for order in orders_detail[\"orders\"]:\n        if \"completed\" == order[\"status\"] and user_id == order[\"user_id\"]:\n            orders_information.append(order)\n    informations = []",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "GET.tutorial",
+        "description": "GET.tutorial",
+        "peekOfCode": "app = FastAPI()\ndef load_dataset():\n    with open(\"database.json\", \"r\") as file:\n        return json.load(file)\ndef save_dataset(data):\n    with open(\"database.json\", \"w\") as file:\n        json.dump(data, file, indent=4)\nclass Students(BaseModel):\n    id: Annotated[\n        int, Field(..., description=\"The ID of the student\", examples=[1, 2, 3])",
+        "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "Students",
+        "kind": 6,
+        "importPath": "POST.tutorial",
+        "description": "POST.tutorial",
+        "peekOfCode": "class Students(BaseModel):\n    id: Annotated[int, Field(..., description=\"The ID of the student\", examples=[1, 2, 3])]\n    name: Annotated[str, Field(..., description=\"The name of the student\", examples=[\"Lena Fischer\"])]\n    age: Annotated[int, Field(..., description=\"The age of the student\", examples=[20, 21, 22])]\n    email: Annotated[str, Field(..., description=\"The email of the student\", examples=[\"lena.fischer@example.com\"])]\n    is_active: Annotated[bool, Field(..., description=\"Whether the student is active or not\", examples=[True, False])]\n    enrolled_courses: Annotated[List[int], Field(..., description=\"The list of courses the student is enrolled in\", examples=[[101, 102]])]\n    profile: Annotated[\n        Dict[str, Optional[Union[str, int, float]]],\n        Field(",
+        "detail": "POST.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "Courses",
+        "kind": 6,
+        "importPath": "POST.tutorial",
+        "description": "POST.tutorial",
+        "peekOfCode": "class Courses(BaseModel):\n    id: Annotated[\n        int, Field(..., description=\"The ID of the course\", examples=[101, 102, 103])\n    ]\n    name: Annotated[\n        str,\n        Field(\n            ...,\n            description=\"The name of the course\",\n            examples=[\"Introduction to Programming\", \"Data Structures\", \"Algorithms\"],",
+        "detail": "POST.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "Grades",
+        "kind": 6,
+        "importPath": "POST.tutorial",
+        "description": "POST.tutorial",
+        "peekOfCode": "class Grades(BaseModel):\n    student_id: Optional[Annotated[\n        int, Field(description=\"The ID of the student\", examples=[1, 2, 3])\n    ]]\n    course_id: Optional[Annotated[\n        int, Field(description=\"The ID of the course\", examples=[101, 102, 103])\n    ]]\n    grade: Optional[Annotated[\n        str,\n        Field(description=\"The grade of the student in the course\", examples=[\"A\", \"B\", \"C\"],",
+        "detail": "POST.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "load_dataset",
+        "kind": 2,
+        "importPath": "POST.tutorial",
+        "description": "POST.tutorial",
+        "peekOfCode": "def load_dataset():\n    with open(\"database.json\", \"r\") as file:\n        return json.load(file)\ndef save_dataset(data):\n    with open(\"database.json\", \"w\") as file:\n        return json.dump(data, file, indent=4)\nclass Students(BaseModel):\n    id: Annotated[int, Field(..., description=\"The ID of the student\", examples=[1, 2, 3])]\n    name: Annotated[str, Field(..., description=\"The name of the student\", examples=[\"Lena Fischer\"])]\n    age: Annotated[int, Field(..., description=\"The age of the student\", examples=[20, 21, 22])]",
+        "detail": "POST.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "save_dataset",
+        "kind": 2,
+        "importPath": "POST.tutorial",
+        "description": "POST.tutorial",
+        "peekOfCode": "def save_dataset(data):\n    with open(\"database.json\", \"w\") as file:\n        return json.dump(data, file, indent=4)\nclass Students(BaseModel):\n    id: Annotated[int, Field(..., description=\"The ID of the student\", examples=[1, 2, 3])]\n    name: Annotated[str, Field(..., description=\"The name of the student\", examples=[\"Lena Fischer\"])]\n    age: Annotated[int, Field(..., description=\"The age of the student\", examples=[20, 21, 22])]\n    email: Annotated[str, Field(..., description=\"The email of the student\", examples=[\"lena.fischer@example.com\"])]\n    is_active: Annotated[bool, Field(..., description=\"Whether the student is active or not\", examples=[True, False])]\n    enrolled_courses: Annotated[List[int], Field(..., description=\"The list of courses the student is enrolled in\", examples=[[101, 102]])]",
+        "detail": "POST.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "insert_students_information",
+        "kind": 2,
+        "importPath": "POST.tutorial",
+        "description": "POST.tutorial",
+        "peekOfCode": "def insert_students_information(student: Students):\n    existing_student_details = load_dataset()[\"students\"]\n    student_details = load_dataset()\n    for student_detail in existing_student_details:\n        if student.id == student_detail[\"id\"]:\n            raise HTTPException(\n                status_code=400,\n                detail=\"The student ID already exists in the database\",\n            )\n    student_details[\"students\"].append(student.model_dump())",
+        "detail": "POST.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "add_new_grades",
+        "kind": 2,
+        "importPath": "POST.tutorial",
+        "description": "POST.tutorial",
+        "peekOfCode": "def add_new_grades(grades: Grades):\n    student_grades = load_dataset()[\"grades\"] # it would return a list of dictionaries\n    student_grades.append(grades.model_dump())\n    save_dataset(student_grades)\n    return student_grades",
+        "detail": "POST.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "POST.tutorial",
+        "description": "POST.tutorial",
+        "peekOfCode": "app = FastAPI()\ndef load_dataset():\n    with open(\"database.json\", \"r\") as file:\n        return json.load(file)\ndef save_dataset(data):\n    with open(\"database.json\", \"w\") as file:\n        return json.dump(data, file, indent=4)\nclass Students(BaseModel):\n    id: Annotated[int, Field(..., description=\"The ID of the student\", examples=[1, 2, 3])]\n    name: Annotated[str, Field(..., description=\"The name of the student\", examples=[\"Lena Fischer\"])]",
+        "detail": "POST.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "Students",
+        "kind": 6,
+        "importPath": "PUT.tutorial",
+        "description": "PUT.tutorial",
+        "peekOfCode": "class Students(BaseModel):\n    id: Optional[Annotated[int, Field(description=\"The ID of the student\", examples=[1, 2, 3])]] = None\n    name: Optional[Annotated[str, Field(description=\"The name of the student\", examples=[\"Lena Fischer\"])]] = None\n    age: Optional[Annotated[int, Field(description=\"The age of the student\", examples=[20, 21, 22])]] = None\n    email: Optional[Annotated[str, Field(description=\"The email of the student\", examples=[\"lena.fischer@example.com\"])]] = None\n    is_active: Optional[Annotated[bool, Field(description=\"Whether the student is active or not\", examples=[True, False])]] = None\n    enrolled_courses: Optional[Annotated[List[int], Field(description=\"The list of courses the student is enrolled in\", examples=[[101, 102]])]] = None\n    profile: Optional[Annotated[\n        Dict[str, Optional[Union[str, int, float]]],\n        Field(",
+        "detail": "PUT.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "Courses",
+        "kind": 6,
+        "importPath": "PUT.tutorial",
+        "description": "PUT.tutorial",
+        "peekOfCode": "class Courses(BaseModel):\n    id: Annotated[\n        int, Field(..., description=\"The ID of the course\", examples=[101, 102, 103])\n    ]\n    name: Annotated[\n        str,\n        Field(\n            ...,\n            description=\"The name of the course\",\n            examples=[\"Introduction to Programming\", \"Data Structures\", \"Algorithms\"],",
+        "detail": "PUT.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "Grades",
+        "kind": 6,
+        "importPath": "PUT.tutorial",
+        "description": "PUT.tutorial",
+        "peekOfCode": "class Grades(BaseModel):\n    student_id: Optional[Annotated[\n        int, Field(description=\"The ID of the student\", examples=[1, 2, 3])\n    ]]\n    course_id: Optional[Annotated[\n        int, Field(description=\"The ID of the course\", examples=[101, 102, 103])\n    ]]\n    grade: Optional[Annotated[\n        str,\n        Field(description=\"The grade of the student in the course\", examples=[\"A\", \"B\", \"C\"],",
+        "detail": "PUT.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "load_dataset",
+        "kind": 2,
+        "importPath": "PUT.tutorial",
+        "description": "PUT.tutorial",
+        "peekOfCode": "def load_dataset():\n    with open(\"database.json\", \"r\") as file:\n        return json.load(file)\ndef save_dataset(data):\n    with open(\"database.json\", \"w\") as file:\n        return json.dump(data, file, indent=4)\nclass Students(BaseModel):\n    id: Optional[Annotated[int, Field(description=\"The ID of the student\", examples=[1, 2, 3])]] = None\n    name: Optional[Annotated[str, Field(description=\"The name of the student\", examples=[\"Lena Fischer\"])]] = None\n    age: Optional[Annotated[int, Field(description=\"The age of the student\", examples=[20, 21, 22])]] = None",
+        "detail": "PUT.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "save_dataset",
+        "kind": 2,
+        "importPath": "PUT.tutorial",
+        "description": "PUT.tutorial",
+        "peekOfCode": "def save_dataset(data):\n    with open(\"database.json\", \"w\") as file:\n        return json.dump(data, file, indent=4)\nclass Students(BaseModel):\n    id: Optional[Annotated[int, Field(description=\"The ID of the student\", examples=[1, 2, 3])]] = None\n    name: Optional[Annotated[str, Field(description=\"The name of the student\", examples=[\"Lena Fischer\"])]] = None\n    age: Optional[Annotated[int, Field(description=\"The age of the student\", examples=[20, 21, 22])]] = None\n    email: Optional[Annotated[str, Field(description=\"The email of the student\", examples=[\"lena.fischer@example.com\"])]] = None\n    is_active: Optional[Annotated[bool, Field(description=\"Whether the student is active or not\", examples=[True, False])]] = None\n    enrolled_courses: Optional[Annotated[List[int], Field(description=\"The list of courses the student is enrolled in\", examples=[[101, 102]])]] = None",
+        "detail": "PUT.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "update_student_id",
+        "kind": 2,
+        "importPath": "PUT.tutorial",
+        "description": "PUT.tutorial",
+        "peekOfCode": "def update_student_id(student_id: int, student: Students):\n    students_detail = load_dataset() # It will return a list of dictionaries\n    new_details = student.model_dump()\n    for student_info in students_detail[\"students\"]:\n        if student_id == student_info[\"id\"]:\n            student_info.update(new_details)\n            break\n    save_dataset(students_detail)\n    return students_detail",
+        "detail": "PUT.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "PUT.tutorial",
+        "description": "PUT.tutorial",
+        "peekOfCode": "app = FastAPI()\ndef load_dataset():\n    with open(\"database.json\", \"r\") as file:\n        return json.load(file)\ndef save_dataset(data):\n    with open(\"database.json\", \"w\") as file:\n        return json.dump(data, file, indent=4)\nclass Students(BaseModel):\n    id: Optional[Annotated[int, Field(description=\"The ID of the student\", examples=[1, 2, 3])]] = None\n    name: Optional[Annotated[str, Field(description=\"The name of the student\", examples=[\"Lena Fischer\"])]] = None",
+        "detail": "PUT.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "ml-model.model",
+        "description": "ml-model.model",
+        "peekOfCode": "iris = load_iris()\nX, y = iris.data, iris.target\n# Split dataset\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Train model\nmodel = RandomForestClassifier(n_estimators=100, random_state=42)\nmodel.fit(X_train, y_train)\n# Evaluate model\ny_pred = model.predict(X_test)\nprint(f\"Accuracy: {accuracy_score(y_test, y_pred) * 100:.2f}%\")",
+        "detail": "ml-model.model",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "ml-model.model",
+        "description": "ml-model.model",
+        "peekOfCode": "model = RandomForestClassifier(n_estimators=100, random_state=42)\nmodel.fit(X_train, y_train)\n# Evaluate model\ny_pred = model.predict(X_test)\nprint(f\"Accuracy: {accuracy_score(y_test, y_pred) * 100:.2f}%\")\n# Save model\nwith open(\"iris_model.pkl\", \"wb\") as file:\n    pickle.dump(model, file)\n    print(\"Model saved successfully\")\n# Load model",
+        "detail": "ml-model.model",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "ml-model.model",
+        "description": "ml-model.model",
+        "peekOfCode": "y_pred = model.predict(X_test)\nprint(f\"Accuracy: {accuracy_score(y_test, y_pred) * 100:.2f}%\")\n# Save model\nwith open(\"iris_model.pkl\", \"wb\") as file:\n    pickle.dump(model, file)\n    print(\"Model saved successfully\")\n# Load model\nwith open(\"iris_model.pkl\", \"rb\") as file:\n    loaded_model = pickle.load(file)\n    print(\"Model loaded successfully\")",
+        "detail": "ml-model.model",
+        "documentation": {}
+    },
+    {
+        "label": "sample",
+        "kind": 5,
+        "importPath": "ml-model.model",
+        "description": "ml-model.model",
+        "peekOfCode": "sample = [[5.1, 3.5, 1.4, 0.2]]  # expected: setosa\nprediction = loaded_model.predict(sample)\nprint(prediction)\nprint(f\"Prediction: {iris.target_names[prediction[0]]}\")\nprint(X[0])",
+        "detail": "ml-model.model",
+        "documentation": {}
+    },
+    {
+        "label": "prediction",
+        "kind": 5,
+        "importPath": "ml-model.model",
+        "description": "ml-model.model",
+        "peekOfCode": "prediction = loaded_model.predict(sample)\nprint(prediction)\nprint(f\"Prediction: {iris.target_names[prediction[0]]}\")\nprint(X[0])",
+        "detail": "ml-model.model",
+        "documentation": {}
+    },
+    {
+        "label": "Iris",
+        "kind": 6,
+        "importPath": "ml-model.predict",
+        "description": "ml-model.predict",
+        "peekOfCode": "class Iris(BaseModel):\n    sepal_length: Annotated[float, Field(..., description=\"The sepal length\", examples=[5.1, 5.2, 5.3])]\n    sepal_width: Annotated[float, Field(..., description=\"The sepal width\", examples=[3.5, 3.6, 3.7])]\n    petal_length: Annotated[float, Field(..., description=\"The petal length\", examples=[1.4, 1.5, 1.6])]\n    petal_width: Annotated[float, Field(..., description=\"The petal width\", examples=[0.2, 0.3, 0.4])]\n@app.post(\"/predict\")\ndef prediction(features: Iris):\n    model = load_model()\n    data = pd.DataFrame([features.model_dump()])\n    predicted = model.predict(data.values)",
+        "detail": "ml-model.predict",
+        "documentation": {}
+    },
+    {
+        "label": "load_model",
+        "kind": 2,
+        "importPath": "ml-model.predict",
+        "description": "ml-model.predict",
+        "peekOfCode": "def load_model():\n    with open(\"iris_model.pkl\", \"rb\") as file:\n        loaded_model = pickle.load(file)\n        print(\"Model loaded successfully\")\n        return loaded_model\nclass Iris(BaseModel):\n    sepal_length: Annotated[float, Field(..., description=\"The sepal length\", examples=[5.1, 5.2, 5.3])]\n    sepal_width: Annotated[float, Field(..., description=\"The sepal width\", examples=[3.5, 3.6, 3.7])]\n    petal_length: Annotated[float, Field(..., description=\"The petal length\", examples=[1.4, 1.5, 1.6])]\n    petal_width: Annotated[float, Field(..., description=\"The petal width\", examples=[0.2, 0.3, 0.4])]",
+        "detail": "ml-model.predict",
+        "documentation": {}
+    },
+    {
+        "label": "prediction",
+        "kind": 2,
+        "importPath": "ml-model.predict",
+        "description": "ml-model.predict",
+        "peekOfCode": "def prediction(features: Iris):\n    model = load_model()\n    data = pd.DataFrame([features.model_dump()])\n    predicted = model.predict(data.values)\n    return {\"prediction\": int(predicted[0])}  # convert numpy int to Python int",
+        "detail": "ml-model.predict",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "ml-model.predict",
+        "description": "ml-model.predict",
+        "peekOfCode": "app = FastAPI()\n# Load model\ndef load_model():\n    with open(\"iris_model.pkl\", \"rb\") as file:\n        loaded_model = pickle.load(file)\n        print(\"Model loaded successfully\")\n        return loaded_model\nclass Iris(BaseModel):\n    sepal_length: Annotated[float, Field(..., description=\"The sepal length\", examples=[5.1, 5.2, 5.3])]\n    sepal_width: Annotated[float, Field(..., description=\"The sepal width\", examples=[3.5, 3.6, 3.7])]",
+        "detail": "ml-model.predict",
+        "documentation": {}
+    }
+]
