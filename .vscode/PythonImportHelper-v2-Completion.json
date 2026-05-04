@@ -105,75 +105,35 @@
         "documentation": {}
     },
     {
-        "label": "FastAPI",
-        "importPath": "fastapi",
-        "description": "fastapi",
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
         "isExtraImport": true,
-        "detail": "fastapi",
+        "detail": "pydantic",
         "documentation": {}
     },
     {
-        "label": "HTTPException",
-        "importPath": "fastapi",
-        "description": "fastapi",
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
         "isExtraImport": true,
-        "detail": "fastapi",
+        "detail": "pydantic",
         "documentation": {}
     },
     {
-        "label": "Query",
-        "importPath": "fastapi",
-        "description": "fastapi",
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
         "isExtraImport": true,
-        "detail": "fastapi",
+        "detail": "pydantic",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "fastapi",
-        "description": "fastapi",
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
         "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "FastAPI",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "HTTPException",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Query",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "FastAPI",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
+        "detail": "pydantic",
         "documentation": {}
     },
     {
@@ -249,6 +209,14 @@
         "documentation": {}
     },
     {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "HTTPException",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -266,6 +234,86 @@
     },
     {
         "label": "Path",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -494,6 +542,86 @@
         "description": "typing",
         "isExtraImport": true,
         "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
         "documentation": {}
     },
     {
@@ -538,7 +666,71 @@
         "documentation": {}
     },
     {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
         "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "precision_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "recall_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "precision_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "recall_score",
         "importPath": "sklearn.metrics",
         "description": "sklearn.metrics",
         "isExtraImport": true,
@@ -552,6 +744,82 @@
         "importPath": "pandas",
         "description": "pandas",
         "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn.functional",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn.functional",
+        "description": "torch.nn.functional",
+        "detail": "torch.nn.functional",
+        "documentation": {}
+    },
+    {
+        "label": "TensorDataset",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "DataLoader",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "TensorDataset",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "DataLoader",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "Classifier",
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "isExtraImport": true,
+        "detail": "mlFastAPI.classifier",
         "documentation": {}
     },
     {
@@ -1056,6 +1324,177 @@
         "description": "ml-model.predict",
         "peekOfCode": "app = FastAPI()\n# Load model\ndef load_model():\n    with open(\"iris_model.pkl\", \"rb\") as file:\n        loaded_model = pickle.load(file)\n        print(\"Model loaded successfully\")\n        return loaded_model\nclass Iris(BaseModel):\n    sepal_length: Annotated[float, Field(..., description=\"The sepal length\", examples=[5.1, 5.2, 5.3])]\n    sepal_width: Annotated[float, Field(..., description=\"The sepal width\", examples=[3.5, 3.6, 3.7])]",
         "detail": "ml-model.predict",
+        "documentation": {}
+    },
+    {
+        "label": "Classifier",
+        "kind": 6,
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "peekOfCode": "class Classifier(nn.Module):\n    def __init__(self, in_features: int = 8, num_output: int = 1):\n        super().__init__()\n        self.in_features = in_features\n        self.num_outputs = num_output\n        self.out_features = self.num_outputs * 32 if self.num_outputs == 1 else self.out_features * 16\n        self.layers = []\n        for index in range(4):\n            if index == 0:\n                self.layers.append(nn.Linear(in_features=self.in_features, out_features=self.out_features))",
+        "detail": "mlFastAPI.classifier",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "peekOfCode": "def train(model, epochs, train_dataloader, test_dataloader):\n    for epoch in range(epochs):\n        for features, labels in train_dataloader:\n            features = features.to(device)\n            labels = labels.to(device)\n            predicted = model(features)\n            loss = criterion(predicted, labels)\n            optimizer.zero_grad()\n            loss.backward()\n            optimizer.step()",
+        "detail": "mlFastAPI.classifier",
+        "documentation": {}
+    },
+    {
+        "label": "dataset",
+        "kind": 5,
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "peekOfCode": "dataset = pd.read_csv(\"/Users/shahmuhammadraditrahman/Desktop/fastAPI-tutorial/mlFastAPI/diabetes.csv\")\nX = dataset.iloc[:, :-1].values\ny = dataset.iloc[:, -1].values\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)\nX_train = torch.tensor(X_train, dtype=torch.float32)\nX_test = torch.tensor(X_test, dtype=torch.float32)\ny_train = torch.tensor(y_train, dtype=torch.float32)\ny_test = torch.tensor(y_test, dtype=torch.float32)\ntrain_dataloader = DataLoader(\n    dataset=list(zip(X_train, y_train)), batch_size=32, shuffle=True",
+        "detail": "mlFastAPI.classifier",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "peekOfCode": "X = dataset.iloc[:, :-1].values\ny = dataset.iloc[:, -1].values\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)\nX_train = torch.tensor(X_train, dtype=torch.float32)\nX_test = torch.tensor(X_test, dtype=torch.float32)\ny_train = torch.tensor(y_train, dtype=torch.float32)\ny_test = torch.tensor(y_test, dtype=torch.float32)\ntrain_dataloader = DataLoader(\n    dataset=list(zip(X_train, y_train)), batch_size=32, shuffle=True\n)",
+        "detail": "mlFastAPI.classifier",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "peekOfCode": "y = dataset.iloc[:, -1].values\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)\nX_train = torch.tensor(X_train, dtype=torch.float32)\nX_test = torch.tensor(X_test, dtype=torch.float32)\ny_train = torch.tensor(y_train, dtype=torch.float32)\ny_test = torch.tensor(y_test, dtype=torch.float32)\ntrain_dataloader = DataLoader(\n    dataset=list(zip(X_train, y_train)), batch_size=32, shuffle=True\n)\ntest_dataloader = DataLoader(",
+        "detail": "mlFastAPI.classifier",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "peekOfCode": "X_train = torch.tensor(X_train, dtype=torch.float32)\nX_test = torch.tensor(X_test, dtype=torch.float32)\ny_train = torch.tensor(y_train, dtype=torch.float32)\ny_test = torch.tensor(y_test, dtype=torch.float32)\ntrain_dataloader = DataLoader(\n    dataset=list(zip(X_train, y_train)), batch_size=32, shuffle=True\n)\ntest_dataloader = DataLoader(\n    dataset=list(zip(X_test, y_test)), batch_size=32, shuffle=True\n)",
+        "detail": "mlFastAPI.classifier",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "peekOfCode": "X_test = torch.tensor(X_test, dtype=torch.float32)\ny_train = torch.tensor(y_train, dtype=torch.float32)\ny_test = torch.tensor(y_test, dtype=torch.float32)\ntrain_dataloader = DataLoader(\n    dataset=list(zip(X_train, y_train)), batch_size=32, shuffle=True\n)\ntest_dataloader = DataLoader(\n    dataset=list(zip(X_test, y_test)), batch_size=32, shuffle=True\n)\nclass Classifier(nn.Module):",
+        "detail": "mlFastAPI.classifier",
+        "documentation": {}
+    },
+    {
+        "label": "y_train",
+        "kind": 5,
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "peekOfCode": "y_train = torch.tensor(y_train, dtype=torch.float32)\ny_test = torch.tensor(y_test, dtype=torch.float32)\ntrain_dataloader = DataLoader(\n    dataset=list(zip(X_train, y_train)), batch_size=32, shuffle=True\n)\ntest_dataloader = DataLoader(\n    dataset=list(zip(X_test, y_test)), batch_size=32, shuffle=True\n)\nclass Classifier(nn.Module):\n    def __init__(self, in_features: int = 8, num_output: int = 1):",
+        "detail": "mlFastAPI.classifier",
+        "documentation": {}
+    },
+    {
+        "label": "y_test",
+        "kind": 5,
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "peekOfCode": "y_test = torch.tensor(y_test, dtype=torch.float32)\ntrain_dataloader = DataLoader(\n    dataset=list(zip(X_train, y_train)), batch_size=32, shuffle=True\n)\ntest_dataloader = DataLoader(\n    dataset=list(zip(X_test, y_test)), batch_size=32, shuffle=True\n)\nclass Classifier(nn.Module):\n    def __init__(self, in_features: int = 8, num_output: int = 1):\n        super().__init__()",
+        "detail": "mlFastAPI.classifier",
+        "documentation": {}
+    },
+    {
+        "label": "train_dataloader",
+        "kind": 5,
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "peekOfCode": "train_dataloader = DataLoader(\n    dataset=list(zip(X_train, y_train)), batch_size=32, shuffle=True\n)\ntest_dataloader = DataLoader(\n    dataset=list(zip(X_test, y_test)), batch_size=32, shuffle=True\n)\nclass Classifier(nn.Module):\n    def __init__(self, in_features: int = 8, num_output: int = 1):\n        super().__init__()\n        self.in_features = in_features",
+        "detail": "mlFastAPI.classifier",
+        "documentation": {}
+    },
+    {
+        "label": "test_dataloader",
+        "kind": 5,
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "peekOfCode": "test_dataloader = DataLoader(\n    dataset=list(zip(X_test, y_test)), batch_size=32, shuffle=True\n)\nclass Classifier(nn.Module):\n    def __init__(self, in_features: int = 8, num_output: int = 1):\n        super().__init__()\n        self.in_features = in_features\n        self.num_outputs = num_output\n        self.out_features = self.num_outputs * 32 if self.num_outputs == 1 else self.out_features * 16\n        self.layers = []",
+        "detail": "mlFastAPI.classifier",
+        "documentation": {}
+    },
+    {
+        "label": "clf",
+        "kind": 5,
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "peekOfCode": "clf = Classifier(in_features=X.shape[1], num_output=1)\ndevice = \"mps\" if torch.backends.mps.is_available() else \"cpu\"\nclf.to(device)\ncriterion = nn.BCELoss()\noptimizer = torch.optim.Adam(clf.parameters(), lr=0.001)\ndef train(model, epochs, train_dataloader, test_dataloader):\n    for epoch in range(epochs):\n        for features, labels in train_dataloader:\n            features = features.to(device)\n            labels = labels.to(device)",
+        "detail": "mlFastAPI.classifier",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "peekOfCode": "device = \"mps\" if torch.backends.mps.is_available() else \"cpu\"\nclf.to(device)\ncriterion = nn.BCELoss()\noptimizer = torch.optim.Adam(clf.parameters(), lr=0.001)\ndef train(model, epochs, train_dataloader, test_dataloader):\n    for epoch in range(epochs):\n        for features, labels in train_dataloader:\n            features = features.to(device)\n            labels = labels.to(device)\n            predicted = model(features)",
+        "detail": "mlFastAPI.classifier",
+        "documentation": {}
+    },
+    {
+        "label": "criterion",
+        "kind": 5,
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "peekOfCode": "criterion = nn.BCELoss()\noptimizer = torch.optim.Adam(clf.parameters(), lr=0.001)\ndef train(model, epochs, train_dataloader, test_dataloader):\n    for epoch in range(epochs):\n        for features, labels in train_dataloader:\n            features = features.to(device)\n            labels = labels.to(device)\n            predicted = model(features)\n            loss = criterion(predicted, labels)\n            optimizer.zero_grad()",
+        "detail": "mlFastAPI.classifier",
+        "documentation": {}
+    },
+    {
+        "label": "optimizer",
+        "kind": 5,
+        "importPath": "mlFastAPI.classifier",
+        "description": "mlFastAPI.classifier",
+        "peekOfCode": "optimizer = torch.optim.Adam(clf.parameters(), lr=0.001)\ndef train(model, epochs, train_dataloader, test_dataloader):\n    for epoch in range(epochs):\n        for features, labels in train_dataloader:\n            features = features.to(device)\n            labels = labels.to(device)\n            predicted = model(features)\n            loss = criterion(predicted, labels)\n            optimizer.zero_grad()\n            loss.backward()",
+        "detail": "mlFastAPI.classifier",
+        "documentation": {}
+    },
+    {
+        "label": "Features",
+        "kind": 6,
+        "importPath": "mlFastAPI.predict",
+        "description": "mlFastAPI.predict",
+        "peekOfCode": "class Features(BaseModel):\n    Pregnancies: Annotated[\n        int, Field(..., description=\"The number of pregnancies\", examples=[1, 2, 3])\n    ]\n    Glucose: Annotated[\n        int, Field(..., description=\"The glucose level\", examples=[120, 130, 140])\n    ]\n    BloodPressure: Annotated[\n        int, Field(..., description=\"The blood pressure\", examples=[70, 80, 90])\n    ]",
+        "detail": "mlFastAPI.predict",
+        "documentation": {}
+    },
+    {
+        "label": "load_model",
+        "kind": 2,
+        "importPath": "mlFastAPI.predict",
+        "description": "mlFastAPI.predict",
+        "peekOfCode": "def load_model():\n    dataset = pd.read_csv(\"/Users/shahmuhammadraditrahman/Desktop/fastAPI-tutorial/mlFastAPI/diabetes.csv\")\n    X = dataset.iloc[:, :-1].values\n    y = dataset.iloc[:, -1].values\n    classifier = Classifier(in_features=X.shape[1], num_output=len(set(y))-1)\n    model_dict = torch.load(\"classifier.pth\")\n    classifier.load_state_dict(model_dict)\n    return classifier\nclass Features(BaseModel):\n    Pregnancies: Annotated[",
+        "detail": "mlFastAPI.predict",
+        "documentation": {}
+    },
+    {
+        "label": "prediction",
+        "kind": 2,
+        "importPath": "mlFastAPI.predict",
+        "description": "mlFastAPI.predict",
+        "peekOfCode": "def prediction(features: Features):\n    input_features = features.model_dump()\n    input_features = list(input_features.values())\n    input_features = torch.tensor([input_features], dtype=torch.float32)\n    clf = load_model()\n    clf.eval()\n    predicted = clf(input_features)\n    predicted = torch.where(predicted > 0.5, 1, 0)\n    return {\"Prediction\": predicted[0].item()}",
+        "detail": "mlFastAPI.predict",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "mlFastAPI.predict",
+        "description": "mlFastAPI.predict",
+        "peekOfCode": "app = FastAPI()\ndef load_model():\n    dataset = pd.read_csv(\"/Users/shahmuhammadraditrahman/Desktop/fastAPI-tutorial/mlFastAPI/diabetes.csv\")\n    X = dataset.iloc[:, :-1].values\n    y = dataset.iloc[:, -1].values\n    classifier = Classifier(in_features=X.shape[1], num_output=len(set(y))-1)\n    model_dict = torch.load(\"classifier.pth\")\n    classifier.load_state_dict(model_dict)\n    return classifier\nclass Features(BaseModel):",
+        "detail": "mlFastAPI.predict",
         "documentation": {}
     }
 ]
