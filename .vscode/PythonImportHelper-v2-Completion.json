@@ -497,6 +497,14 @@
         "documentation": {}
     },
     {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
         "label": "pickle",
         "kind": 6,
         "isExtraImport": true,
@@ -795,6 +803,15 @@
         "importPath": "GET.tutorial2",
         "description": "GET.tutorial2",
         "peekOfCode": "def update_details(user_id: int, order_id: int, status: Orders):\n    orders_detail = load_ecommerce_database()\n    specific_information = []\n    orders_information = []\n    for details in orders_detail:\n        if details[\"id\"] == user_id:\n            specific_information.append(details)\n    for details in specific_information:\n        for order in details[\"orders\"]:\n            if order[\"order_id\"] == order_id:",
+        "detail": "GET.tutorial2",
+        "documentation": {}
+    },
+    {
+        "label": "delete_items",
+        "kind": 2,
+        "importPath": "GET.tutorial2",
+        "description": "GET.tutorial2",
+        "peekOfCode": "def delete_items(user_id: int, order_id: int):\n    products_detail = load_ecommerce_database()\n    del_products_info = []\n    for details in products_detail:\n        if details[\"id\"] == user_id:\n            for oder in details[\"orders\"]:\n                if oder[\"order_id\"] == order_id:\n                    del_products_info.append(oder)\n                    details[\"orders\"].remove(oder)\n                    with open(\"ecommerce.json\", \"w\") as file:",
         "detail": "GET.tutorial2",
         "documentation": {}
     },

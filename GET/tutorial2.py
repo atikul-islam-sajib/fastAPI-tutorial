@@ -1,5 +1,6 @@
 import json
 from fastapi import FastAPI
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 from typing import Optional, Annotated, List, Dict
 
@@ -88,3 +89,27 @@ def update_details(user_id: int, order_id: int, status: Orders):
         
                 
     return orders_information
+
+
+@app.delete("/users/{user_id}/orders/{order_id}")
+def delete_items(user_id: int, order_id: int):
+    products_detail = load_ecommerce_database()
+    
+    del_products_info = []
+    for details in products_detail:
+        if details["id"] == user_id:
+            for oder in details["orders"]:
+                if oder["order_id"] == order_id:
+                    del_products_info.append(oder)
+                    details["orders"].remove(oder)
+                    with open("ecommerce.json", "w") as file:
+                        json.dump(products_detail, file, indent=4)
+                
+    return {
+        "message": "Order {} deleted successfully".format(del_products_info[0]["order_id"]),
+        "deleted_order": {
+            "order_id": del_products_info[0]["order_id"],
+            "product": del_products_info[0]["product"],
+            "status": del_products_info[0]["status"],
+        }
+    }
