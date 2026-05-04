@@ -113,3 +113,33 @@ def delete_items(user_id: int, order_id: int):
             "status": del_products_info[0]["status"],
         }
     }
+
+"""
+        "order_id": 101,
+        "product": "Laptop",
+        "quantity": 1,
+        "price": 1299.99,
+        "status": "delivered",
+        "ordered_at": "2024-11-01T10:30:00"
+"""
+
+class OrdersDetails(BaseModel):
+    order_id: Annotated[int, Field(description="ID of the order", examples=[101, 102, 103])]
+    product: Annotated[str, Field(description="Name of the product", examples=["Laptop", "Mouse", "Keyboard"])]
+    quantity: Annotated[int, Field(description="Quantity of the product", examples=[1, 2, 3])]
+    price: Annotated[float, Field(description="Price of the product", examples=[1299.99, 49.99, 19.99])]
+    status: Annotated[str, Field(description="Status of the order", examples=["pending", "completed", "cancelled"])]
+    ordered_at: Optional[Annotated[str, Field(description="Date and time when the order was placed", examples=["2024-11-01T10:30:00", "2024-11-02T14:45:00"])]] = None
+    
+@app.post("/users/{user_id}/orders")
+def insert_recent_orders(user_id: int, order: OrdersDetails):
+    ecommerce_database = load_ecommerce_database()
+    
+    for details in ecommerce_database:
+        if details["id"] == user_id:
+            details["orders"].append(order.model_dump())
+            
+    with open("ecommerce.json", "w") as file:
+        json.dump(ecommerce_database, file, indent=2)
+        
+    return {"message": "Order added successfully", "order": order.model_dump()}

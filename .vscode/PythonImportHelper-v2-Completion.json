@@ -771,6 +771,15 @@
         "documentation": {}
     },
     {
+        "label": "OrdersDetails",
+        "kind": 6,
+        "importPath": "GET.tutorial2",
+        "description": "GET.tutorial2",
+        "peekOfCode": "class OrdersDetails(BaseModel):\n    order_id: Annotated[int, Field(description=\"ID of the order\", examples=[101, 102, 103])]\n    product: Annotated[str, Field(description=\"Name of the product\", examples=[\"Laptop\", \"Mouse\", \"Keyboard\"])]\n    quantity: Annotated[int, Field(description=\"Quantity of the product\", examples=[1, 2, 3])]\n    price: Annotated[float, Field(description=\"Price of the product\", examples=[1299.99, 49.99, 19.99])]\n    status: Annotated[str, Field(description=\"Status of the order\", examples=[\"pending\", \"completed\", \"cancelled\"])]\n    ordered_at: Optional[Annotated[str, Field(description=\"Date and time when the order was placed\", examples=[\"2024-11-01T10:30:00\", \"2024-11-02T14:45:00\"])]] = None\n@app.post(\"/users/{user_id}/orders\")\ndef insert_recent_orders(user_id: int, order: OrdersDetails):\n    ecommerce_database = load_ecommerce_database()",
+        "detail": "GET.tutorial2",
+        "documentation": {}
+    },
+    {
         "label": "load_ecommerce_database",
         "kind": 2,
         "importPath": "GET.tutorial2",
@@ -812,6 +821,15 @@
         "importPath": "GET.tutorial2",
         "description": "GET.tutorial2",
         "peekOfCode": "def delete_items(user_id: int, order_id: int):\n    products_detail = load_ecommerce_database()\n    del_products_info = []\n    for details in products_detail:\n        if details[\"id\"] == user_id:\n            for oder in details[\"orders\"]:\n                if oder[\"order_id\"] == order_id:\n                    del_products_info.append(oder)\n                    details[\"orders\"].remove(oder)\n                    with open(\"ecommerce.json\", \"w\") as file:",
+        "detail": "GET.tutorial2",
+        "documentation": {}
+    },
+    {
+        "label": "insert_recent_orders",
+        "kind": 2,
+        "importPath": "GET.tutorial2",
+        "description": "GET.tutorial2",
+        "peekOfCode": "def insert_recent_orders(user_id: int, order: OrdersDetails):\n    ecommerce_database = load_ecommerce_database()\n    for details in ecommerce_database:\n        if details[\"id\"] == user_id:\n            details[\"orders\"].append(order.model_dump())\n    with open(\"ecommerce.json\", \"w\") as file:\n        json.dump(ecommerce_database, file, indent=2)\n    return {\"message\": \"Order added successfully\", \"order\": order.model_dump()}",
         "detail": "GET.tutorial2",
         "documentation": {}
     },
