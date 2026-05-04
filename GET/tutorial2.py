@@ -12,8 +12,8 @@ def load_ecommerce_database():
 
 
 @app.get("/user/{user_id}/orders}")
-def display_all_delivered_orders(user_id: int , status: str):
-    
+def display_all_delivered_orders(user_id: int, status: str):
+
     products_detail = load_ecommerce_database()
 
     specific_details = []
@@ -38,3 +38,30 @@ def display_all_delivered_orders(user_id: int , status: str):
         "total_results": len(ordered_information),
     }
     return result
+
+
+@app.get("/users")
+def filter_dataset(role: str, active: bool, city: str):
+    users_information = load_ecommerce_database()
+
+    detailed_information = []
+
+    for details in users_information:
+        while (
+            details["role"] == role
+            and details["active"] == active
+            and details["address"]["city"] == city
+        ):
+            detailed_information.append(
+                {
+                    key: value
+                    for key, value in details.items()
+                    if key not in ["orders", "created_at", "tags"]
+                }
+            )
+            break
+
+    return {
+        "total": len(detailed_information),
+        "users": detailed_information,
+    }

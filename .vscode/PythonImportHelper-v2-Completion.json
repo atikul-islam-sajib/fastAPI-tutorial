@@ -758,7 +758,7 @@
         "kind": 2,
         "importPath": "GET.tutorial2",
         "description": "GET.tutorial2",
-        "peekOfCode": "def load_ecommerce_database():\n    with open(\"ecommerce.json\", \"r\") as file:\n        return json.load(file)\n@app.get(\"/user/{user_id}/orders}\")\ndef display_all_delivered_orders(user_id: int , status: str):\n    products_detail = load_ecommerce_database()\n    specific_details = []\n    for details in products_detail:\n        while user_id == details[\"id\"]:\n            specific_details.append(details)",
+        "peekOfCode": "def load_ecommerce_database():\n    with open(\"ecommerce.json\", \"r\") as file:\n        return json.load(file)\n@app.get(\"/user/{user_id}/orders}\")\ndef display_all_delivered_orders(user_id: int, status: str):\n    products_detail = load_ecommerce_database()\n    specific_details = []\n    for details in products_detail:\n        while user_id == details[\"id\"]:\n            specific_details.append(details)",
         "detail": "GET.tutorial2",
         "documentation": {}
     },
@@ -767,7 +767,16 @@
         "kind": 2,
         "importPath": "GET.tutorial2",
         "description": "GET.tutorial2",
-        "peekOfCode": "def display_all_delivered_orders(user_id: int , status: str):\n    products_detail = load_ecommerce_database()\n    specific_details = []\n    for details in products_detail:\n        while user_id == details[\"id\"]:\n            specific_details.append(details)\n            break\n    ordered_information = []\n    for details in specific_details:\n        delivered_information = details[\"orders\"]",
+        "peekOfCode": "def display_all_delivered_orders(user_id: int, status: str):\n    products_detail = load_ecommerce_database()\n    specific_details = []\n    for details in products_detail:\n        while user_id == details[\"id\"]:\n            specific_details.append(details)\n            break\n    ordered_information = []\n    for details in specific_details:\n        delivered_information = details[\"orders\"]",
+        "detail": "GET.tutorial2",
+        "documentation": {}
+    },
+    {
+        "label": "filter_dataset",
+        "kind": 2,
+        "importPath": "GET.tutorial2",
+        "description": "GET.tutorial2",
+        "peekOfCode": "def filter_dataset(role: str, active: bool, city: str):\n    users_information = load_ecommerce_database()\n    detailed_information = []\n    for details in users_information:\n        while (\n            details[\"role\"] == role\n            and details[\"active\"] == active\n            and details[\"address\"][\"city\"] == city\n        ):\n            detailed_information.append(",
         "detail": "GET.tutorial2",
         "documentation": {}
     },
@@ -776,7 +785,7 @@
         "kind": 5,
         "importPath": "GET.tutorial2",
         "description": "GET.tutorial2",
-        "peekOfCode": "app = FastAPI()\ndef load_ecommerce_database():\n    with open(\"ecommerce.json\", \"r\") as file:\n        return json.load(file)\n@app.get(\"/user/{user_id}/orders}\")\ndef display_all_delivered_orders(user_id: int , status: str):\n    products_detail = load_ecommerce_database()\n    specific_details = []\n    for details in products_detail:\n        while user_id == details[\"id\"]:",
+        "peekOfCode": "app = FastAPI()\ndef load_ecommerce_database():\n    with open(\"ecommerce.json\", \"r\") as file:\n        return json.load(file)\n@app.get(\"/user/{user_id}/orders}\")\ndef display_all_delivered_orders(user_id: int, status: str):\n    products_detail = load_ecommerce_database()\n    specific_details = []\n    for details in products_detail:\n        while user_id == details[\"id\"]:",
         "detail": "GET.tutorial2",
         "documentation": {}
     },
