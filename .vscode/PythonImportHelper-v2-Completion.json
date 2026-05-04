@@ -89,6 +89,54 @@
         "documentation": {}
     },
     {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -122,30 +170,6 @@
     },
     {
         "label": "FastAPI",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "HTTPException",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Query",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -282,6 +306,38 @@
     },
     {
         "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -695,6 +751,33 @@
         "description": "GET.tutorial",
         "peekOfCode": "app = FastAPI()\ndef load_dataset():\n    with open(\"database.json\", \"r\") as file:\n        return json.load(file)\ndef save_dataset(data):\n    with open(\"database.json\", \"w\") as file:\n        json.dump(data, file, indent=4)\nclass Students(BaseModel):\n    id: Annotated[\n        int, Field(..., description=\"The ID of the student\", examples=[1, 2, 3])",
         "detail": "GET.tutorial",
+        "documentation": {}
+    },
+    {
+        "label": "load_ecommerce_database",
+        "kind": 2,
+        "importPath": "GET.tutorial2",
+        "description": "GET.tutorial2",
+        "peekOfCode": "def load_ecommerce_database():\n    with open(\"ecommerce.json\", \"r\") as file:\n        return json.load(file)\n@app.get(\"/user/{user_id}/orders}\")\ndef display_all_delivered_orders(user_id: int , status: str):\n    products_detail = load_ecommerce_database()\n    specific_details = []\n    for details in products_detail:\n        while user_id == details[\"id\"]:\n            specific_details.append(details)",
+        "detail": "GET.tutorial2",
+        "documentation": {}
+    },
+    {
+        "label": "display_all_delivered_orders",
+        "kind": 2,
+        "importPath": "GET.tutorial2",
+        "description": "GET.tutorial2",
+        "peekOfCode": "def display_all_delivered_orders(user_id: int , status: str):\n    products_detail = load_ecommerce_database()\n    specific_details = []\n    for details in products_detail:\n        while user_id == details[\"id\"]:\n            specific_details.append(details)\n            break\n    ordered_information = []\n    for details in specific_details:\n        delivered_information = details[\"orders\"]",
+        "detail": "GET.tutorial2",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "GET.tutorial2",
+        "description": "GET.tutorial2",
+        "peekOfCode": "app = FastAPI()\ndef load_ecommerce_database():\n    with open(\"ecommerce.json\", \"r\") as file:\n        return json.load(file)\n@app.get(\"/user/{user_id}/orders}\")\ndef display_all_delivered_orders(user_id: int , status: str):\n    products_detail = load_ecommerce_database()\n    specific_details = []\n    for details in products_detail:\n        while user_id == details[\"id\"]:",
+        "detail": "GET.tutorial2",
         "documentation": {}
     },
     {
