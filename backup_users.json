@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "request_id": "req_9f83a2c1",
+    "generated_at": "2026-05-07T14:32:11Z",
+    "api_version": "v2.4.1",
+    "environment": "staging"
+  },
+  "users": [
+    {
+      "id": 101,
+      "username": "alice_dev",
+      "email": "alice@example.com",
+      "is_active": true,
+      "roles": ["admin", "editor"],
+      "profile": {
+        "first_name": "Alice",
+        "last_name": "Johnson",
+        "age": 28,
+        "address": {
+          "street": "12 Green Street",
+          "city": "Berlin",
+          "zip_code": "10115",
+          "country": "Germany",
+          "coordinates": {
+            "lat": 52.5200,
+            "lng": 13.4050
+          }
+        },
+        "social_links": {
+          "github": "https://github.com/alice",
+          "linkedin": "https://linkedin.com/in/alice"
+        }
+      },
+      "projects": [
+        {
+          "project_id": "P-1001",
+          "name": "Inventory Management System",
+          "status": "in_progress",
+          "tags": ["fastapi", "postgresql", "docker"],
+          "tasks": [
+            {
+              "task_id": "T-1",
+              "title": "Create authentication API",
+              "completed": true,
+              "estimated_hours": 12.5
+            },
+            {
+              "task_id": "T-2",
+              "title": "Add JWT middleware",
+              "completed": false,
+              "estimated_hours": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "username": "bob_data",
+      "email": "bob@example.com",
+      "is_active": false,
+      "roles": ["viewer"],
+      "profile": {
+        "first_name": "Bob",
+        "last_name": "Miller",
+        "age": 34,
+        "address": {
+          "street": "89 Lake Road",
+          "city": "Munich",
+          "zip_code": "80331",
+          "country": "Germany",
+          "coordinates": {
+            "lat": 48.1351,
+            "lng": 11.5820
+          }
+        },
+        "social_links": {
+          "github": null,
+          "linkedin": "https://linkedin.com/in/bob"
+        }
+      },
+      "projects": []
+    }
+  ],
+  "products": [
+    {
+      "product_id": "PRD-001",
+      "name": "Mechanical Keyboard",
+      "category": "Electronics",
+      "price": {
+        "amount": 89.99,
+        "currency": "EUR"
+      },
+      "stock": 120,
+      "specifications": {
+        "switch_type": "Brown",
+        "wireless": true,
+        "battery_life_hours": 40
+      },
+      "reviews": [
+        {
+          "review_id": "R-9001",
+          "user_id": 101,
+          "rating": 4.5,
+          "comment": "Great typing experience!"
+        },
+        {
+          "review_id": "R-9002",
+          "user_id": 102,
+          "rating": 4.0,
+          "comment": "Good value for money."
+        }
+      ]
+    },
+    {
+      "product_id": "PRD-002",
+      "name": "27-inch Monitor",
+      "category": "Electronics",
+      "price": {
+        "amount": 249.99,
+        "currency": "EUR"
+      },
+      "stock": 45,
+      "specifications": {
+        "resolution": "2560x1440",
+        "refresh_rate_hz": 144,
+        "panel_type": "IPS"
+      },
+      "reviews": []
+    }
+  ],
+  "analytics": {
+    "daily_active_users": [120, 132, 145, 160, 158, 170, 180],
+    "server_metrics": {
+      "cpu_usage_percent": 73.5,
+      "memory_usage_gb": 12.8,
+      "disk_space_remaining_gb": 240.3
+    },
+    "feature_flags": {
+      "beta_dashboard": true,
+      "dark_mode": false,
+      "new_auth_flow": true
+    }
+  },
+  "errors": [
+    {
+      "code": "AUTH_401",
+      "message": "Unauthorized access token",
+      "timestamp": "2026-05-07T13:22:01Z"
+    },
+    {
+      "code": "DB_503",
+      "message": "Database temporarily unavailable",
+      "timestamp": "2026-05-07T13:45:17Z"
+    }
+  ]
+}

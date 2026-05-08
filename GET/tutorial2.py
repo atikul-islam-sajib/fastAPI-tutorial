@@ -11,8 +11,18 @@ def load_ecommerce_database():
     with open("ecommerce.json", "r") as file:
         return json.load(file)
 
+
 class Orders(BaseModel):
-    status: Optional[Annotated[str, Field(description="Status of the order", examples=["pending", "completed", "cancelled"])]] = None
+    status: Optional[
+        Annotated[
+            str,
+            Field(
+                description="Status of the order",
+                examples=["pending", "completed", "cancelled"],
+            ),
+        ]
+    ] = None
+
 
 @app.get("/user/{user_id}/{orders}")
 def display_all_delivered_orders(user_id: int, status: str):
@@ -69,10 +79,11 @@ def filter_dataset(role: str, active: bool, city: str):
         "users": detailed_information,
     }
 
+
 @app.put("/users/{user_id}/orders/{order_id}")
 def update_details(user_id: int, order_id: int, status: Orders):
     orders_detail = load_ecommerce_database()
-    
+
     specific_information = []
     orders_information = []
     for details in orders_detail:
@@ -86,15 +97,14 @@ def update_details(user_id: int, order_id: int, status: Orders):
                 orders_information.append(order)
                 with open("ecommerce.json", "w") as file:
                     json.dump(orders_detail, file, indent=4)
-        
-                
+
     return orders_information
 
 
 @app.delete("/users/{user_id}/orders/{order_id}")
 def delete_items(user_id: int, order_id: int):
     products_detail = load_ecommerce_database()
-    
+
     del_products_info = []
     for details in products_detail:
         if details["id"] == user_id:
@@ -104,15 +114,18 @@ def delete_items(user_id: int, order_id: int):
                     details["orders"].remove(oder)
                     with open("ecommerce.json", "w") as file:
                         json.dump(products_detail, file, indent=4)
-                
+
     return {
-        "message": "Order {} deleted successfully".format(del_products_info[0]["order_id"]),
+        "message": "Order {} deleted successfully".format(
+            del_products_info[0]["order_id"]
+        ),
         "deleted_order": {
             "order_id": del_products_info[0]["order_id"],
             "product": del_products_info[0]["product"],
             "status": del_products_info[0]["status"],
-        }
+        },
     }
+
 
 """
         "order_id": 101,
@@ -123,23 +136,77 @@ def delete_items(user_id: int, order_id: int):
         "ordered_at": "2024-11-01T10:30:00"
 """
 
+
 class OrdersDetails(BaseModel):
-    order_id: Annotated[int, Field(description="ID of the order", examples=[101, 102, 103])]
-    product: Annotated[str, Field(description="Name of the product", examples=["Laptop", "Mouse", "Keyboard"])]
-    quantity: Annotated[int, Field(description="Quantity of the product", examples=[1, 2, 3])]
-    price: Annotated[float, Field(description="Price of the product", examples=[1299.99, 49.99, 19.99])]
-    status: Annotated[str, Field(description="Status of the order", examples=["pending", "completed", "cancelled"])]
-    ordered_at: Optional[Annotated[str, Field(description="Date and time when the order was placed", examples=["2024-11-01T10:30:00", "2024-11-02T14:45:00"])]] = None
-    
+    order_id: Annotated[
+        int, Field(description="ID of the order", examples=[101, 102, 103])
+    ]
+    product: Annotated[
+        str,
+        Field(
+            description="Name of the product", examples=["Laptop", "Mouse", "Keyboard"]
+        ),
+    ]
+    quantity: Annotated[
+        int, Field(description="Quantity of the product", examples=[1, 2, 3])
+    ]
+    price: Annotated[
+        float,
+        Field(description="Price of the product", examples=[1299.99, 49.99, 19.99]),
+    ]
+    status: Annotated[
+        str,
+        Field(
+            description="Status of the order",
+            examples=["pending", "completed", "cancelled"],
+        ),
+    ]
+    ordered_at: Optional[
+        Annotated[
+            str,
+            Field(
+                description="Date and time when the order was placed",
+                examples=["2024-11-01T10:30:00", "2024-11-02T14:45:00"],
+            ),
+        ]
+    ] = None
+
+
 @app.post("/users/{user_id}/orders")
 def insert_recent_orders(user_id: int, order: OrdersDetails):
     ecommerce_database = load_ecommerce_database()
-    
+
     for details in ecommerce_database:
         if details["id"] == user_id:
             details["orders"].append(order.model_dump())
-            
+
     with open("ecommerce.json", "w") as file:
         json.dump(ecommerce_database, file, indent=2)
-        
+
     return {"message": "Order added successfully", "order": order.model_dump()}
+
+
+def load_users_database():
+    with open("users.json", "r") as file:
+        return json.load(file)
+
+
+@app.get("/active-with-projects")
+def find_details_active_users():
+    user_database = load_users_database()
+
+    active_users = []
+    
+
+    for details in user_database["users"]:
+        if details["is_active"]:
+            active_users.append(
+                {
+                    "id": details["id"],
+                    "name": details["username"],
+                    "email": details["email"],
+                    "project_count": len(details["projects"]),
+                }
+            )
+
+    return active_users

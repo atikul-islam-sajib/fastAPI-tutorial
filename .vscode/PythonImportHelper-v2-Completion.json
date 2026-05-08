@@ -1034,7 +1034,7 @@
         "kind": 6,
         "importPath": "GET.tutorial2",
         "description": "GET.tutorial2",
-        "peekOfCode": "class Orders(BaseModel):\n    status: Optional[Annotated[str, Field(description=\"Status of the order\", examples=[\"pending\", \"completed\", \"cancelled\"])]] = None\n@app.get(\"/user/{user_id}/{orders}\")\ndef display_all_delivered_orders(user_id: int, status: str):\n    products_detail = load_ecommerce_database()\n    specific_details = []\n    for details in products_detail:\n        while user_id == details[\"id\"]:\n            specific_details.append(details)\n            break",
+        "peekOfCode": "class Orders(BaseModel):\n    status: Optional[\n        Annotated[\n            str,\n            Field(\n                description=\"Status of the order\",\n                examples=[\"pending\", \"completed\", \"cancelled\"],\n            ),\n        ]\n    ] = None",
         "detail": "GET.tutorial2",
         "documentation": {}
     },
@@ -1043,7 +1043,7 @@
         "kind": 6,
         "importPath": "GET.tutorial2",
         "description": "GET.tutorial2",
-        "peekOfCode": "class OrdersDetails(BaseModel):\n    order_id: Annotated[int, Field(description=\"ID of the order\", examples=[101, 102, 103])]\n    product: Annotated[str, Field(description=\"Name of the product\", examples=[\"Laptop\", \"Mouse\", \"Keyboard\"])]\n    quantity: Annotated[int, Field(description=\"Quantity of the product\", examples=[1, 2, 3])]\n    price: Annotated[float, Field(description=\"Price of the product\", examples=[1299.99, 49.99, 19.99])]\n    status: Annotated[str, Field(description=\"Status of the order\", examples=[\"pending\", \"completed\", \"cancelled\"])]\n    ordered_at: Optional[Annotated[str, Field(description=\"Date and time when the order was placed\", examples=[\"2024-11-01T10:30:00\", \"2024-11-02T14:45:00\"])]] = None\n@app.post(\"/users/{user_id}/orders\")\ndef insert_recent_orders(user_id: int, order: OrdersDetails):\n    ecommerce_database = load_ecommerce_database()",
+        "peekOfCode": "class OrdersDetails(BaseModel):\n    order_id: Annotated[\n        int, Field(description=\"ID of the order\", examples=[101, 102, 103])\n    ]\n    product: Annotated[\n        str,\n        Field(\n            description=\"Name of the product\", examples=[\"Laptop\", \"Mouse\", \"Keyboard\"]\n        ),\n    ]",
         "detail": "GET.tutorial2",
         "documentation": {}
     },
@@ -1052,7 +1052,7 @@
         "kind": 2,
         "importPath": "GET.tutorial2",
         "description": "GET.tutorial2",
-        "peekOfCode": "def load_ecommerce_database():\n    with open(\"ecommerce.json\", \"r\") as file:\n        return json.load(file)\nclass Orders(BaseModel):\n    status: Optional[Annotated[str, Field(description=\"Status of the order\", examples=[\"pending\", \"completed\", \"cancelled\"])]] = None\n@app.get(\"/user/{user_id}/{orders}\")\ndef display_all_delivered_orders(user_id: int, status: str):\n    products_detail = load_ecommerce_database()\n    specific_details = []\n    for details in products_detail:",
+        "peekOfCode": "def load_ecommerce_database():\n    with open(\"ecommerce.json\", \"r\") as file:\n        return json.load(file)\nclass Orders(BaseModel):\n    status: Optional[\n        Annotated[\n            str,\n            Field(\n                description=\"Status of the order\",\n                examples=[\"pending\", \"completed\", \"cancelled\"],",
         "detail": "GET.tutorial2",
         "documentation": {}
     },
@@ -1097,7 +1097,25 @@
         "kind": 2,
         "importPath": "GET.tutorial2",
         "description": "GET.tutorial2",
-        "peekOfCode": "def insert_recent_orders(user_id: int, order: OrdersDetails):\n    ecommerce_database = load_ecommerce_database()\n    for details in ecommerce_database:\n        if details[\"id\"] == user_id:\n            details[\"orders\"].append(order.model_dump())\n    with open(\"ecommerce.json\", \"w\") as file:\n        json.dump(ecommerce_database, file, indent=2)\n    return {\"message\": \"Order added successfully\", \"order\": order.model_dump()}",
+        "peekOfCode": "def insert_recent_orders(user_id: int, order: OrdersDetails):\n    ecommerce_database = load_ecommerce_database()\n    for details in ecommerce_database:\n        if details[\"id\"] == user_id:\n            details[\"orders\"].append(order.model_dump())\n    with open(\"ecommerce.json\", \"w\") as file:\n        json.dump(ecommerce_database, file, indent=2)\n    return {\"message\": \"Order added successfully\", \"order\": order.model_dump()}\ndef load_users_database():\n    with open(\"users.json\", \"r\") as file:",
+        "detail": "GET.tutorial2",
+        "documentation": {}
+    },
+    {
+        "label": "load_users_database",
+        "kind": 2,
+        "importPath": "GET.tutorial2",
+        "description": "GET.tutorial2",
+        "peekOfCode": "def load_users_database():\n    with open(\"users.json\", \"r\") as file:\n        return json.load(file)\n@app.get(\"/active-with-projects\")\ndef find_details_active_users():\n    user_database = load_users_database()\n    active_users = []\n    for details in user_database[\"users\"]:\n        if details[\"is_active\"]:\n            active_users.append(",
+        "detail": "GET.tutorial2",
+        "documentation": {}
+    },
+    {
+        "label": "find_details_active_users",
+        "kind": 2,
+        "importPath": "GET.tutorial2",
+        "description": "GET.tutorial2",
+        "peekOfCode": "def find_details_active_users():\n    user_database = load_users_database()\n    active_users = []\n    for details in user_database[\"users\"]:\n        if details[\"is_active\"]:\n            active_users.append(\n                {\n                    \"id\": details[\"id\"],\n                    \"name\": details[\"username\"],\n                    \"email\": details[\"email\"],",
         "detail": "GET.tutorial2",
         "documentation": {}
     },
@@ -1106,7 +1124,7 @@
         "kind": 5,
         "importPath": "GET.tutorial2",
         "description": "GET.tutorial2",
-        "peekOfCode": "app = FastAPI()\ndef load_ecommerce_database():\n    with open(\"ecommerce.json\", \"r\") as file:\n        return json.load(file)\nclass Orders(BaseModel):\n    status: Optional[Annotated[str, Field(description=\"Status of the order\", examples=[\"pending\", \"completed\", \"cancelled\"])]] = None\n@app.get(\"/user/{user_id}/{orders}\")\ndef display_all_delivered_orders(user_id: int, status: str):\n    products_detail = load_ecommerce_database()\n    specific_details = []",
+        "peekOfCode": "app = FastAPI()\ndef load_ecommerce_database():\n    with open(\"ecommerce.json\", \"r\") as file:\n        return json.load(file)\nclass Orders(BaseModel):\n    status: Optional[\n        Annotated[\n            str,\n            Field(\n                description=\"Status of the order\",",
         "detail": "GET.tutorial2",
         "documentation": {}
     },
