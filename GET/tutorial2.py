@@ -1,8 +1,9 @@
 import json
+import fastapi
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
-from typing import Optional, Annotated, List, Dict
+from typing import Optional, Annotated, List, Dict, Union
 
 app = FastAPI()
 
@@ -233,3 +234,64 @@ def find_top_rated_products():
                 
                 
     return products_details
+
+# {
+#   "project_id": "P-1002",
+#   "name": "AI Resume Analyzer",
+#   "status": "planned",
+#   "tags": ["fastapi", "machine-learning"],
+#   "tasks": [
+#     {
+#       "task_id": "T-10",
+#       "title": "Create NLP pipeline",
+#       "completed": false,
+#       "estimated_hours": 20
+#     }
+#   ]
+# }
+class Products(BaseModel):
+    project_id: Annotated[str, Field(description="ID of the project", examples=["P-1001", "P-1002", "P-1003"])]
+    name: Annotated[
+        str,
+        Field(
+            description="Name of the project", examples=["Inventory Management System", "AI Resume Analyzer", "E-commerce Platform"]
+        ),
+    ]
+    status: Annotated[
+        str,
+        Field(
+            description="Status of the project", examples=["planned", "in-progress", "completed"]
+        ),
+    ]
+    tags: Annotated[
+        List[str],
+        Field(
+            description="Tags associated with the project", examples=["fastapi", "machine-learning", "data-science"]
+        ),
+    ]
+    tasks: Annotated[
+        List[Dict[str, Union[str, bool, float]]],
+        Field(
+            description="Tasks associated with the project", examples=[{"task_id": "T-10", "title": "Create NLP pipeline", "completed": False, "estimated_hours": 20}]
+        ),
+    ]
+
+def save_products_database(database):
+    with open("users.json", "w") as file:
+        json.dump(database, file, indent=1)
+        
+@app.post("/users/{user_id}/projects")
+def insert_projects(user_id: int, products: Products):
+    databse = load_users_database()
+    users_details = databse["users"]
+    
+    new_products = products.model_dump()
+    
+    for user in users_details:
+        if user["id"] == user_id:
+            user["projects"].append(new_products)
+            save_products_database(databse)
+    
+    return {"message": "Project added successfully", "project": new_products}
+            
+    

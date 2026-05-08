@@ -137,6 +137,15 @@
         "documentation": {}
     },
     {
+        "label": "fastapi",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -418,6 +427,14 @@
     },
     {
         "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -1048,6 +1065,15 @@
         "documentation": {}
     },
     {
+        "label": "Products",
+        "kind": 6,
+        "importPath": "GET.tutorial2",
+        "description": "GET.tutorial2",
+        "peekOfCode": "class Products(BaseModel):\n    project_id: Annotated[str, Field(description=\"ID of the project\", examples=[\"P-1001\", \"P-1002\", \"P-1003\"])]\n    name: Annotated[\n        str,\n        Field(\n            description=\"Name of the project\", examples=[\"Inventory Management System\", \"AI Resume Analyzer\", \"E-commerce Platform\"]\n        ),\n    ]\n    status: Annotated[\n        str,",
+        "detail": "GET.tutorial2",
+        "documentation": {}
+    },
+    {
         "label": "load_ecommerce_database",
         "kind": 2,
         "importPath": "GET.tutorial2",
@@ -1125,6 +1151,24 @@
         "importPath": "GET.tutorial2",
         "description": "GET.tutorial2",
         "peekOfCode": "def find_top_rated_products():\n    databse = load_users_database()\n    products = databse[\"products\"]\n    ratings = []\n    products_details = {}\n    for details in products:\n        reviews = details[\"reviews\"]\n        for rating in reviews:\n            if rating[\"rating\"] >= 4.0:\n                ratings.append(float(rating[\"rating\"]))",
+        "detail": "GET.tutorial2",
+        "documentation": {}
+    },
+    {
+        "label": "save_products_database",
+        "kind": 2,
+        "importPath": "GET.tutorial2",
+        "description": "GET.tutorial2",
+        "peekOfCode": "def save_products_database(database):\n    with open(\"users.json\", \"w\") as file:\n        json.dump(database, file, indent=1)\n@app.post(\"/users/{user_id}/projects\")\ndef insert_projects(user_id: int, products: Products):\n    databse = load_users_database()\n    users_details = databse[\"users\"]\n    new_products = products.model_dump()\n    for user in users_details:\n        if user[\"id\"] == user_id:",
+        "detail": "GET.tutorial2",
+        "documentation": {}
+    },
+    {
+        "label": "insert_projects",
+        "kind": 2,
+        "importPath": "GET.tutorial2",
+        "description": "GET.tutorial2",
+        "peekOfCode": "def insert_projects(user_id: int, products: Products):\n    databse = load_users_database()\n    users_details = databse[\"users\"]\n    new_products = products.model_dump()\n    for user in users_details:\n        if user[\"id\"] == user_id:\n            user[\"projects\"].append(new_products)\n            save_products_database(databse)\n    return {\"message\": \"Project added successfully\", \"project\": new_products}",
         "detail": "GET.tutorial2",
         "documentation": {}
     },
