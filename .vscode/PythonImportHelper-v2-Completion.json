@@ -1120,6 +1120,15 @@
         "documentation": {}
     },
     {
+        "label": "find_top_rated_products",
+        "kind": 2,
+        "importPath": "GET.tutorial2",
+        "description": "GET.tutorial2",
+        "peekOfCode": "def find_top_rated_products():\n    databse = load_users_database()\n    products = databse[\"products\"]\n    ratings = []\n    products_details = {}\n    for details in products:\n        reviews = details[\"reviews\"]\n        for rating in reviews:\n            if rating[\"rating\"] >= 4.0:\n                ratings.append(float(rating[\"rating\"]))",
+        "detail": "GET.tutorial2",
+        "documentation": {}
+    },
+    {
         "label": "app",
         "kind": 5,
         "importPath": "GET.tutorial2",

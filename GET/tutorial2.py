@@ -210,3 +210,26 @@ def find_details_active_users():
             )
 
     return active_users
+
+
+@app.get("/products/top_rated")
+def find_top_rated_products():
+    databse = load_users_database()
+    products = databse["products"]
+    
+    ratings = []
+    products_details = {}
+    
+    for details in products:
+        reviews = details["reviews"]
+        for rating in reviews:
+            if rating["rating"] >= 4.0:
+                ratings.append(float(rating["rating"]))
+                products_details["product_id"] = details["product_id"]
+                products_details["name"] = details["name"]
+                
+    products_details["average_rating"] = sum(ratings) / len(ratings)
+    products_details["review_count"] = len(ratings)
+                
+                
+    return products_details
